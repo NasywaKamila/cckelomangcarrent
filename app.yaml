@@ -1,0 +1,13 @@
+runtime: php82
+
+entrypoint: serve public/index.php
+
+env_variables:
+  APP_ENV: production
+  APP_DEBUG: false
+  APP_KEY: base64:OWUvHrJO9dwLiXMT9R33tJH7EyWGXAtt5Ik/ozKrUE4=
+  STORAGE_DIR: /tmp
+
+handlers:
+  - url: /.*
+    script: auto
